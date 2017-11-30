@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#de-animat{
+
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 10s;
+}
+
+img {
+    max-width: 100%;
+    height: 500px;
+    -webkit-transition: width 2s; 
+    transition: width 2s;
+    }
+
+.button{
+	max-width: 100%;
+    height: 500px;
+    -webkit-transition: width 2s; 
+    transition: width 2s;
+}
+	
+a:hover {  
+    opacity: 0.65;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+		}
+	
+.title {
+    background-color: #CDCDC0;
+    padding: 16px;
+    text-align: center;
+    font-family:Courier New;
+    color: white;
+    font-size:21px;
+}
+
+/* Style the header */
+.header {
+    background-color: #626D71;
+    padding: 1px;
+    text-align: center;
+    font-family:courier new;
+    color:#BCBABE;
+    font-size:13px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+   /* height: 300px;  Should be removed. Only for demonstration */
+   
+}
+
+/* Left and right column */
+.column.side {
+    width: 28%;
+	 
+}
+
+/* Middle column */
+.column.middle {
+    width: 44%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #CDCDC0;
+    padding: 3px;
+    text-align: center;
+    color: white;
+	font-family: Courier new;
+    text-align:right;
+    font-size:13px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+}
+</style>
+</head>
+<body>
+
+<div class="title">
+<h2></h2>
+<h2>The Leisure Guru</h2>
+</div>
+<div class="header">
+  
+  <p> Bun venit pe pagina! Crezi ca le-ai vazut pe toate? Arunca un ochi pe propunerile urmatoare pentru carte, film si travel: </p>
+</div>
+
+<div class="row">
+
+  <div class="column side" style="background-color:#aaa;">
+  <a href="books.html" class="button">
+  <img src="books3.jpg" alt="Books" width="450" height="750">
+  </a>
+  </div>
+  
+  
+  <div class="column middle" style="background-color:#bbb;" >
+  <a href="movies.html" class="button">
+  <img src="film3.jpg" alt="Films" width="900" height="450" title="Films">
+  </a>
+  </div>
+  
+  
+  <div class="column side" style="background-color:#ccc;" >
+  <a href="travel.html" class="button">
+  <img src="travel3.jpg" alt="Travel" width="450" height="750">
+  </a>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Fata din spatele blogului: Alexandra Rafoi</p>
+  <p>Ma poti gasi pe <a href="https://www.facebook.com/alexandra.rafoi">Facebook</a> si <a href="https://www.instagram.com/alexandrarafoi/?hl=en">Instagram</a></p>
+</div>
+
+</body>
+</html>
